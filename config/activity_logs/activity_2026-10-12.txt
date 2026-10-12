@@ -1,0 +1,12 @@
+2026-10-12 00:08:02	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-12 00:16:49	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-12 00:16:57	2	STF-01	staff	login	Authentication		Successful sign-in.	::1	
+2026-10-12 00:43:12	2	STF-01	staff	logout	Authentication		Signed out.	::1	
+2026-10-12 00:43:34	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-12 00:43:49	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-12 00:44:00	4	STF-02	staff	login	Authentication		Successful sign-in.	::1	
+2026-10-12 00:53:19	4	STF-02	staff	logout	Authentication		Signed out.	::1	
+2026-10-12 00:53:29	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-12 01:24:28	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-12 01:24:36	2	STF-01	staff	login	Authentication		Successful sign-in.	::1	
+2026-10-12 01:26:07	2	STF-01	staff	logout	Authentication		Signed out.	::1	

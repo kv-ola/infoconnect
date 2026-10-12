@@ -1,0 +1,19 @@
+* { box-sizing:border-box; }
+body { margin:0; padding:32px 16px; background:#eef7fc; color:#142d55; font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif; }
+.notice-sheet { width:min(100%,760px); margin:0 auto; padding:36px 42px; border:1px solid #d9e6f2; border-radius:8px; background:#fff; box-shadow:0 5px 16px rgba(28,70,118,.08); }
+.notice-header { padding-bottom:20px; border-bottom:2px solid #147dff; text-align:center; }
+.notice-brand { color:#123f7a; font-size:1.45rem; font-weight:800; }
+.notice-header p { margin:4px 0 22px; color:#617999; }
+.notice-header h1 { margin:0; font-size:1.35rem; }
+.notice-intro { margin:20px 0; color:#526d8e; text-align:center; }
+.notice-details { width:100%; border-collapse:collapse; }
+.notice-details th,.notice-details td { padding:12px 14px; border:1px solid #e4edf6; text-align:left; vertical-align:top; }
+.notice-details th { width:35%; background:#f3f9fe; }
+.notice-message { margin:20px 0; padding:14px; border-left:4px solid #147dff; background:#f3f9fe; line-height:1.55; }
+.notice-error { border-left-color:#c53b3b; background:#fff1f1; color:#8f2828; }
+.notice-footer { display:flex; justify-content:space-between; gap:12px; padding-top:14px; border-top:1px solid #e4edf6; color:#617999; font-size:.8rem; }
+.notice-controls { display:flex; justify-content:center; gap:12px; margin-top:25px; }
+.notice-controls button,.notice-controls a { padding:10px 16px; border:1px solid #147dff; border-radius:5px; background:#147dff; color:#fff; font:inherit; font-weight:700; text-decoration:none; cursor:pointer; }
+.notice-controls a { background:#fff; color:#147dff; }
+@media print { @page { size:A4; margin:18mm; } body { padding:0; background:#fff; } .notice-sheet { width:100%; margin:0; padding:0; border:0; border-radius:0; box-shadow:none; } .notice-controls { display:none; } }
+@media(max-width:560px) { body { padding:14px 8px; } .notice-sheet { padding:22px 16px; } .notice-details th,.notice-details td { padding:9px 8px; } .notice-footer { flex-direction:column; } }

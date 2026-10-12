@@ -1,0 +1,54 @@
+2026-10-09 09:59:11	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-09 09:59:29	2	STF-01	staff	login	Authentication		Successful sign-in.	::1	
+2026-10-09 10:02:21	2	STF-01	staff	create	Announcement	2	Submitted "ATTENTION!" for approval.	::1	
+2026-10-09 10:07:21	2	STF-01	staff	logout	Authentication		Signed out.	::1	
+2026-10-09 10:07:29	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-09 10:37:04	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-09 10:37:20	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-09 10:37:26	1	ADM-01	admin	approved	Requests	313	Approved announcement request REQ-313.	::1	
+2026-10-09 10:37:33	1	ADM-01	admin	approved	Requests	7	Approved event request REQ-007.	::1	
+2026-10-09 10:37:53	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-09 11:33:47	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-09 11:35:37	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-09 14:17:55	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-09 14:19:36	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-09 14:20:16	3	INFO-0000	senior	login	Authentication		Successful sign-in.	::1	
+2026-10-09 15:18:02	3	INFO-0000	senior	logout	Authentication		Signed out.	::1	
+2026-10-09 17:07:55	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-09 17:10:19	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-09 17:27:52	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-09 17:34:10	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-09 17:39:52	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-09 17:42:05	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-09 17:42:14	2	STF-01	staff	login	Authentication		Successful sign-in.	::1	
+2026-10-09 18:01:38	2	STF-01	staff	create	Seniors	305	Submitted senior record OSCA-SAMPLE-05020 for approval.	::1	
+2026-10-09 18:09:46	2	STF-01	staff	import	Seniors	2	Imported senior records from sample test 2.csv: 0 submitted, 0 duplicates, 1 failed.	::1	
+2026-10-09 18:12:49	2	STF-01	staff	import	Seniors	3	Imported senior records from sample test 2.csv: 0 submitted, 0 duplicates, 1 failed.	::1	
+2026-10-09 18:14:12	2	STF-01	staff	import	Seniors	4	Imported senior records from sample test 2.csv: 0 submitted, 0 duplicates, 1 failed.	::1	
+2026-10-09 18:15:08	2	STF-01	staff	import	Seniors	5	Imported senior records from sample test 2.csv: 1 submitted, 0 duplicates, 0 failed.	::1	
+2026-10-09 18:15:22	2	STF-01	staff	import	Seniors	6	Imported senior records from sample test 2.csv: 0 submitted, 1 duplicates, 0 failed.	::1	
+2026-10-09 18:16:08	2	STF-01	staff	logout	Authentication		Signed out.	::1	
+2026-10-09 18:16:44	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-09 18:20:42	1	ADM-01	admin	create	Accounts	5	Created staff account luyun.ella-mae for Ella Mae Luyun.	::1	
+2026-10-09 18:22:47	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-09 18:22:58	5	luyun.ella-mae	staff	login	Authentication		Successful sign-in.	::1	
+2026-10-09 18:25:14	5	luyun.ella-mae	staff	update	Authentication		Completed a required password change.	::1	
+2026-10-09 18:27:02	5	luyun.ella-mae	staff	create	Announcement	3	Submitted "LIBRE" for approval.	::1	
+2026-10-09 18:27:06	5	luyun.ella-mae	staff	logout	Authentication		Signed out.	::1	
+2026-10-09 18:27:13	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-09 18:29:08	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-09 18:29:13	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-09 18:30:22	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-09 18:30:29	2	STF-01	staff	login	Authentication		Successful sign-in.	::1	
+2026-10-09 18:30:50	2	STF-01	staff	create	Announcement	4	Submitted "LIBRE" for approval.	::1	
+2026-10-09 18:30:52	2	STF-01	staff	logout	Authentication		Signed out.	::1	
+2026-10-09 18:30:57	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-09 18:31:41	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-09 18:32:16	2	STF-01	staff	login	Authentication		Successful sign-in.	::1	
+2026-10-09 18:37:27	2	STF-01	staff	logout	Authentication		Signed out.	::1	
+2026-10-09 18:37:35	3	INFO-0000	senior	login	Authentication		Successful sign-in.	::1	
+2026-10-09 18:37:39	3	INFO-0000	senior	logout	Authentication		Signed out.	::1	
+2026-10-09 18:42:05	1	ADM-01	admin	login	Authentication		Successful sign-in.	::1	
+2026-10-09 18:46:39	1	ADM-01	admin	logout	Authentication		Signed out.	::1	
+2026-10-09 18:46:46	2	STF-01	staff	login	Authentication		Successful sign-in.	::1	
+2026-10-09 18:49:10	2	STF-01	staff	logout	Authentication		Signed out.	::1	

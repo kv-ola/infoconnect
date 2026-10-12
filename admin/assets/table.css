@@ -1,0 +1,142 @@
+.table-wrap {
+	overflow-x: auto;
+}
+
+.data-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.data-table th,
+.data-table td {
+	padding: 16px 14px;
+	text-align: left;
+	border-bottom: 1px solid #edf1f6;
+	vertical-align: middle;
+}
+
+.data-table th {
+	background: #f7faff;
+	color: var(--muted, #607387);
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.data-table tr:hover td {
+	background: #fafcff;
+}
+
+.table-wrap {
+	overflow-x: auto;
+}
+
+.data-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.data-table th,
+.data-table td {
+	padding: 16px 14px;
+	text-align: left;
+	border-bottom: 1px solid #edf1f6;
+	vertical-align: middle;
+}
+
+.data-table th {
+	background: #f7faff;
+	color: var(--muted, #607387);
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.data-table tr:hover td {
+	background: #fafcff;
+}
+
+.data-table.senior-data-table,
+.data-table.personnel-data-table,
+.data-table.requests-data-table {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 0.78rem;
+}
+
+.data-table.senior-data-table th,
+.data-table.personnel-data-table th,
+.data-table.requests-data-table th {
+	padding: 10px 12px;
+	background: #eff6fc;
+	color: #243b61;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	text-align: left;
+	text-transform: none;
+	white-space: nowrap;
+}
+
+.data-table.senior-data-table td,
+.data-table.personnel-data-table td,
+.data-table.requests-data-table td {
+	padding: 10px 12px;
+	color: #16314b;
+	font-size: 0.78rem;
+	font-weight: 400;
+	white-space: nowrap;
+}
+
+.data-table.senior-data-table tbody tr:nth-child(even),
+.data-table.personnel-data-table tbody tr:nth-child(even),
+.data-table.requests-data-table tbody tr:nth-child(even) {
+	background: #fbfdff;
+}
+
+.data-table.senior-data-table tbody tr:hover td,
+.data-table.personnel-data-table tbody tr:hover td,
+.data-table.requests-data-table tbody tr:hover td {
+	background: #f2f8ff;
+}
+
+.data-table.senior-data-table .status-badge,
+.data-table.personnel-data-table .status-badge,
+.data-table.requests-data-table .status-badge {
+	min-width: 0;
+	border-radius: 5px;
+	padding: 5px 9px;
+	font-size: 0.74rem;
+	font-weight: 700;
+}
+
+.data-table.senior-data-table .row-number,
+.data-table.personnel-data-table .personnel-row-number,
+.data-table.requests-data-table .request-row-number {
+	color: #71839b;
+}
+
+.data-table.senior-data-table .section-action,
+.data-table.personnel-data-table .section-action,
+.data-table.requests-data-table .section-action {
+	display: inline-flex;
+	min-width: 56px;
+	min-height: 28px;
+	align-items: center;
+	justify-content: center;
+	border: 0;
+	border-radius: 5px;
+	background: #0861e8;
+	color: #fff;
+	padding: 4px 10px;
+	font-size: 0.78rem;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.data-table.senior-data-table .section-action:hover,
+.data-table.personnel-data-table .section-action:hover,
+.data-table.requests-data-table .section-action:hover {
+	background: #064fc0;
+}

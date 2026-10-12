@@ -1,0 +1,161 @@
+:root {
+	--admin-theme-blue: #0758bd;
+	--admin-theme-blue-hover: #064ba1;
+	--admin-theme-navy: #152e57;
+	--admin-theme-text: #18345e;
+	--admin-theme-muted: #587296;
+	--admin-theme-line: #e1eaf4;
+	--admin-theme-soft: #eff6fc;
+}
+
+.admin-main {
+	min-width: 0;
+	background: radial-gradient(ellipse at 70% 0, #fff 0, #f7fbff 38%, #f1f7fd 100%);
+	color: var(--admin-theme-text);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-main :is(.admin-content, .home-content) {
+	min-width: 0;
+	flex: 1;
+	flex-direction: column;
+}
+
+.admin-main .admin-content {
+	display: flex;
+	gap: 16px;
+	padding: 20px 22px 28px;
+}
+
+.admin-main .home-content {
+	display: flex;
+	gap: 23px;
+	padding: 18px 23px 30px;
+}
+
+.admin-main .admin-content h1,
+.admin-main .home-welcome h1 {
+	margin: 0;
+	color: var(--admin-theme-navy);
+	font-size: clamp(1.45rem, 2vw, 1.8rem);
+	font-weight: 750;
+	line-height: 1.2;
+}
+
+.admin-main .home-welcome h1 { font-size: clamp(1.65rem, 2.25vw, 2.2rem); }
+
+.admin-main :is(
+	.admin-content > header p,
+	.requests-heading p,
+	.seniors-heading p,
+	.personnel-heading p,
+	.activity-logs-heading p,
+	.reports-heading p,
+	.assistance-history-heading p,
+	.home-welcome p
+) {
+	margin: 4px 0 0;
+	color: var(--admin-theme-muted);
+	font-size: .9rem;
+	line-height: 1.45;
+}
+
+.admin-main :is(
+	.requests-list-heading h2,
+	.seniors-list-heading h2,
+	.personnel-add-panel-heading h2,
+	.add-senior-panel-heading h2,
+	.activity-logs-heading h2,
+	.report-output-heading h2,
+	.report-breakdown-card h3,
+	.senior-info-card > h2,
+	.settings-panel-heading h3,
+	.settings-panel > h2
+) {
+	color: var(--admin-theme-navy);
+	font-weight: 750;
+}
+
+.admin-main :is(input, select, textarea) {
+	border-color: #c9dcf5;
+	border-radius: 8px;
+	color: var(--admin-theme-text);
+	font-family: inherit;
+}
+
+.admin-main :is(input, select, textarea):focus {
+	border-color: var(--admin-theme-blue);
+	outline: 2px solid rgba(20, 119, 219, .14);
+	outline-offset: 1px;
+}
+
+.admin-main :is(input[readonly], input:disabled, select:disabled, textarea:disabled) {
+	border-color: #d8e6f7;
+	background-color: #f3f8ff;
+	color: #526b8d;
+}
+
+.admin-main .admin-content button {
+	border-radius: 8px;
+	font-family: inherit;
+	font-weight: 700;
+}
+
+.admin-main .admin-content :is(button, a, input, select, textarea):focus-visible {
+	outline-color: var(--admin-theme-blue);
+	outline-offset: 2px;
+}
+
+.admin-main .data-table {
+	font-family: inherit;
+	font-size: .88rem;
+}
+
+.admin-main .data-table th {
+	border-color: #e5edf7;
+	background: var(--admin-theme-soft);
+	color: #243b61;
+	font-size: .86rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.admin-main .data-table td {
+	border-color: #e5edf7;
+	color: var(--admin-theme-text);
+	font-size: .88rem;
+}
+
+.admin-main :is(.data-table, .report-detail-table, .activity-table) tbody tr:hover td {
+	background: #f3f8ff;
+}
+
+.admin-main :is(.data-table, .report-detail-table, .activity-table) tbody tr:nth-child(even) {
+	background-color: #fbfdff;
+}
+
+.admin-main .data-table :is(.status-badge, .section-action) { border-radius: 8px; }
+
+.admin-main :is(.section-action, .requests-review-button, .report-primary-button) {
+	border-color: var(--admin-theme-blue);
+	border-radius: 8px;
+	background: var(--admin-theme-blue);
+	color: #fff;
+	font-weight: 700;
+}
+
+.admin-main :is(.section-action, .requests-review-button, .report-primary-button):hover {
+	border-color: var(--admin-theme-blue-hover);
+	background: var(--admin-theme-blue-hover);
+}
+
+@media (max-width: 900px) {
+	.admin-main .admin-content { padding: 18px 16px 24px; }
+	.admin-main .home-content { padding: 18px 18px 26px; }
+}
+
+@media (max-width: 560px) {
+	.admin-main .admin-content { gap: 14px; padding: 15px 12px 20px; }
+	.admin-main .home-content { gap: 17px; padding: 16px 12px 22px; }
+}

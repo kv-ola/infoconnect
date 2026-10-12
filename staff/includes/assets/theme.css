@@ -1,0 +1,340 @@
+:root {
+	--staff-theme-blue: #0758bd;
+	--staff-theme-blue-hover: #064ba1;
+	--staff-theme-blue-dark: #083576;
+	--staff-theme-navy: #152e57;
+	--staff-theme-text: #18345e;
+	--staff-theme-muted: #587296;
+	--staff-theme-line: #e1eaf4;
+	--staff-theme-soft: #eff6fc;
+	--staff-theme-shadow: 0 6px 18px rgba(15, 61, 122, 0.06);
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	min-height: 100vh;
+	background: #f3f8fd;
+	color: var(--staff-theme-text);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.staff-layout {
+	display: flex;
+	min-height: 100vh;
+	width: 100%;
+	align-items: stretch;
+	padding-top: var(--staff-header-height, 110px);
+}
+
+.staff-content {
+	display: flex;
+	min-width: 0;
+	flex-direction: column;
+	gap: 16px;
+	padding: 20px 22px 28px;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.staff-search-field {
+	display: flex;
+	min-width: 0;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 6px;
+}
+
+.staff-search-label {
+	color: var(--staff-theme-muted);
+	font-size: 0.76rem;
+	font-weight: 400;
+	line-height: 1.25;
+}
+
+.staff-main {
+	min-width: 0;
+	background: radial-gradient(ellipse at 70% 0, #fff 0, #f7fbff 38%, #f1f7fd 100%);
+}
+
+.staff-content > header h1,
+.staff-content > header h2,
+.staff-content .reports-heading h1,
+.staff-content .activity-logs-heading h1,
+.staff-content .staff-posts-heading h1,
+.staff-content .staff-post-heading h1,
+.staff-content .seniors-heading h1,
+.staff-content .staff-dashboard-heading h1,
+.staff-content .settings-page-heading h1,
+.staff-content .sms-page-heading h1,
+.staff-content .staff-archive-heading h1,
+.staff-content .staff-senior-form-heading h1 {
+	color: var(--staff-theme-navy);
+	font-size: clamp(1.45rem, 2vw, 1.8rem);
+	font-weight: 750;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.staff-content > header p,
+.staff-content .reports-heading p,
+.staff-content .activity-logs-heading p,
+.staff-content .staff-posts-heading p,
+.staff-content .staff-post-heading p,
+.staff-content .seniors-heading p,
+.staff-content .staff-dashboard-heading p,
+.staff-content .settings-page-heading p,
+.staff-content .sms-page-heading p,
+.staff-content .staff-archive-heading p,
+.staff-content .staff-senior-form-heading p {
+	color: var(--staff-theme-muted);
+	font-size: 0.9rem;
+	line-height: 1.45;
+	margin: 4px 0 0;
+}
+
+.staff-content :is(
+	.home-card,
+	.dashboard-stat,
+	.dashboard-card,
+	.page-card,
+	.seniors-table-card,
+	.senior-info-card,
+	.senior-detail-overview,
+	.staff-senior-summary-card,
+	.staff-posts-panel,
+	.staff-post-card,
+	.staff-archive-card,
+	.staff-events-list-panel,
+	.staff-event-detail,
+	.activity-log-card,
+	.report-period-card,
+	.report-output,
+	.report-breakdown-card,
+	.sms-card,
+	.settings-navigation,
+	.settings-panels > .settings-panel,
+	.settings-panel
+) {
+	min-width: 0;
+	border: 1px solid var(--staff-theme-line);
+	border-radius: 12px;
+	padding: 18px;
+	background-color: #fff;
+	box-shadow: var(--staff-theme-shadow);
+}
+
+.staff-content :is(
+	.card-heading h1,
+	.card-heading h2,
+	.dashboard-card-heading h2,
+	.panel-heading h2,
+	.sms-form-title,
+	.sms-history-heading h2,
+	.staff-posts-panel h2,
+	.staff-archive-card h2,
+	.senior-info-card h2,
+	.senior-section-heading h2,
+	.report-output-heading h2,
+	.report-breakdown-card h3
+) {
+	color: var(--staff-theme-navy);
+	font-weight: 750;
+}
+
+.staff-content :is(input, select, textarea) {
+	border-color: #c9dcf5;
+	border-radius: 8px;
+	color: var(--staff-theme-text);
+	font-family: inherit;
+}
+
+.staff-content :is(input, select, textarea):focus {
+	border-color: var(--staff-theme-blue);
+	outline: 2px solid rgba(20, 119, 219, 0.14);
+	outline-offset: 1px;
+}
+
+.staff-content input[readonly],
+.staff-content input:disabled,
+.staff-content select:disabled,
+.staff-content textarea:disabled {
+	border-color: #d8e6f7;
+	background-color: #f3f8ff;
+	color: #526b8d;
+}
+
+.staff-content button {
+	border-radius: 8px;
+	font-family: inherit;
+	font-weight: 700;
+}
+
+.staff-content :is(button, a, input, select, textarea):focus-visible {
+	outline-color: var(--staff-theme-blue);
+	outline-offset: 2px;
+}
+
+.staff-content :is(
+	.home-table,
+	.data-table,
+	.activity-table,
+	.report-detail-table,
+	.sms-history-table,
+	.settings-about-table,
+	.staff-post-table,
+	.senior-data-table
+) {
+	font-family: inherit;
+	font-size: 0.88rem;
+}
+
+.staff-content .data-table.staff-consistent-table {
+	font-size: 0.8rem;
+}
+
+.staff-content :is(
+	.home-table th,
+	.data-table th,
+	.activity-table th,
+	.report-detail-table th,
+	.sms-history-table th,
+	.settings-about-table th,
+	.staff-post-table th,
+	.senior-data-table th
+) {
+	border-color: #e5edf7;
+	background: var(--staff-theme-soft);
+	color: #243b61;
+	font-size: 0.86rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.staff-content .data-table.staff-consistent-table th {
+	font-size: 0.78rem;
+}
+
+.staff-content :is(
+	.home-table td,
+	.data-table td,
+	.activity-table td,
+	.report-detail-table td,
+	.sms-history-table td,
+	.settings-about-table td,
+	.staff-post-table td,
+	.senior-data-table td
+) {
+	border-color: #e5edf7;
+	color: var(--staff-theme-text);
+	font-size: 0.88rem;
+}
+
+.staff-content .data-table.staff-consistent-table td {
+	font-size: 0.8rem;
+}
+
+.staff-content :is(
+	.home-table tbody tr:hover,
+	.data-table tbody tr:hover,
+	.activity-table tbody tr:hover,
+	.report-detail-table tbody tr:hover,
+	.sms-history-table tbody tr:hover,
+	.settings-about-table tbody tr:hover,
+	.staff-post-table tbody tr:hover,
+	.senior-data-table tbody tr:hover
+) {
+	background: #f3f8ff;
+}
+
+.staff-content :is(.data-table, .home-table, .report-detail-table, .activity-table) tbody tr:nth-child(even) {
+	background-color: #fbfdff;
+}
+
+.staff-content :is(
+	.section-action,
+	.staff-post-action,
+	.senior-account-action-primary,
+	.report-primary-button,
+	.activity-search button,
+	.staff-post-search-button,
+	.sms-button-primary,
+	.settings-primary-link
+) {
+	border-color: var(--staff-theme-blue);
+	border-radius: 8px;
+	background: var(--staff-theme-blue);
+	color: #fff;
+	font-weight: 700;
+}
+
+.staff-content :is(
+	.section-action,
+	.staff-post-action,
+	.senior-account-action-primary,
+	.report-primary-button,
+	.activity-search button,
+	.staff-post-search-button,
+	.sms-button-primary,
+	.settings-primary-link
+):hover {
+	border-color: var(--staff-theme-blue-hover);
+	background: var(--staff-theme-blue-hover);
+}
+
+.staff-content :is(.status-badge, .staff-post-status, .staff-post-type-badge, .activity-badge) {
+	border-radius: 999px;
+	font-weight: 700;
+}
+
+.staff-content :is(.staff-event-status, .staff-post-status, .staff-post-type-badge, .status-badge) {
+	padding: 5px 9px;
+	font-size: 0.72rem;
+}
+
+.staff-content :is(.staff-events-page, .staff-posts-page, .staff-archive-page) {
+	gap: 12px;
+	padding: 16px 20px 24px;
+}
+
+.staff-content :is(.staff-events-heading, .staff-posts-heading, .staff-archive-heading) h1 {
+	font-size: clamp(1.45rem, 2vw, 1.8rem);
+}
+
+.staff-content :is(.staff-events-heading, .staff-posts-heading, .staff-archive-heading) p {
+	margin: 4px 0 0;
+	font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+	.staff-content {
+		padding: 18px 16px 24px;
+	}
+
+	.staff-content :is(.staff-events-page, .staff-posts-page, .staff-archive-page) {
+		padding: 18px 16px 24px;
+	}
+}
+
+@media (max-width: 560px) {
+	.staff-content {
+		padding: 15px 12px 20px;
+	}
+
+	.staff-content :is(.staff-events-page, .staff-posts-page, .staff-archive-page) {
+		padding: 15px 12px 20px;
+	}
+}

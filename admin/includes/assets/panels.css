@@ -1,0 +1,102 @@
+:root {
+	--admin-panel-line: #e1eaf4;
+	--admin-panel-shadow: 0 6px 18px rgba(15, 61, 122, .06);
+}
+
+.admin-main :is(
+	.home-card,
+	.dashboard-card,
+	.page-card,
+	.seniors-table-card,
+	.personnel-table-card,
+	.senior-info-card,
+	.senior-detail-overview,
+	.pending-requests-card,
+	.activity-log-card,
+	.report-period-card,
+	.report-output,
+	.report-breakdown-card,
+	.support-requests-card,
+	.password-reset-card,
+	.assistance-history-card,
+	.settings-navigation,
+	.settings-panel,
+	.personnel-add-panel,
+	.add-senior-panel
+) {
+	min-width: 0;
+	border: 1px solid var(--admin-panel-line);
+	border-radius: 12px;
+	background: #fff;
+	box-shadow: var(--admin-panel-shadow);
+}
+
+.admin-main :is(
+	.home-card,
+	.dashboard-card,
+	.page-card,
+	.seniors-table-card,
+	.personnel-table-card,
+	.senior-info-card,
+	.senior-detail-overview,
+	.pending-requests-card,
+	.activity-log-card,
+	.report-period-card,
+	.report-output,
+	.report-breakdown-card,
+	.support-requests-card,
+	.password-reset-card,
+	.assistance-history-card,
+	.settings-navigation,
+	.settings-panel,
+	.personnel-add-panel,
+	.add-senior-panel
+) {
+	padding: 18px;
+}
+
+.admin-main :is(
+	.page-card,
+	.seniors-table-card,
+	.personnel-table-card,
+	.pending-requests-card,
+	.activity-log-card,
+	.support-requests-card,
+	.password-reset-card,
+	.assistance-history-card
+) > :is(h2, .requests-list-heading, .seniors-list-heading) {
+	color: #152e57;
+	font-weight: 700;
+}
+
+.admin-main :is(.senior-info-card, .settings-panel, .report-breakdown-card) > h2,
+.admin-main :is(.senior-info-card, .settings-panel, .report-breakdown-card) > h3 {
+	color: #152e57;
+	font-weight: 700;
+}
+
+@media (max-width: 680px) {
+	.admin-main :is(
+		.home-card,
+		.dashboard-card,
+		.page-card,
+		.seniors-table-card,
+		.personnel-table-card,
+		.senior-info-card,
+		.senior-detail-overview,
+		.pending-requests-card,
+		.activity-log-card,
+		.report-period-card,
+		.report-output,
+		.report-breakdown-card,
+		.support-requests-card,
+		.password-reset-card,
+		.assistance-history-card,
+		.settings-navigation,
+		.settings-panel,
+		.personnel-add-panel,
+		.add-senior-panel
+	) {
+		padding: 14px;
+	}
+}
